@@ -23,7 +23,7 @@ function currentLine(line) {
   let list = 'The line is currently: '
 
     for (let i = 0, l = line.length; i < l; i++) {
-      if i === l - 1 {
+      if (i === l - 1) {
         list = list + `${i + 1}. ${line[i]}`
       } else {
         list = list + `${i + 1}. ${line[i]}, `
