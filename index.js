@@ -20,13 +20,14 @@ function currentLine(line) {
 
     return 'The line is currently empty.'
 }
-  const list = []
+  let list = 'This line is currently: '
 
     for (let i = 0, l = line.length; i < l; i++) {
 //      numberName.push(`${i + 1}. ${line[i]}`)
-      console.log(`The line is currently: ${i + 1}. ${line[i]}`)
-//     return (`The line is currently: ${i + 1}. ${name[i]}`)
+      list = list + `${i + 1}. ${line[i]}, `
+  
   }
+    return list
 }
 
     // return
